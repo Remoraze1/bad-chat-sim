@@ -3,39 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bad Chat Sim</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Human Chat Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <div class="dim"></div>
+    <div class="setuser">
+        <h2>Set your username</h2>
+        <input class="username" type="text" placeholder="Enter your username...">
+        <button>Start Chat</button>
+    </div>
 
-    <div class="wrapper">
-        <div class="setuser">
-            <p>Welcome! Please choose a username.</p>
-            <div class="wrapper">
-                <input class="username" type="text" maxlength="20" placeholder="Enter a username"/><button>Confirm</button>
-            </div>
-        </div>
-        <div class="dim"></div>
-        <div class="chat">
-            <div class="reminder">Welcome! Remember to be kind to others&hellip; Bad Chat Sim</div>
-            <div class="chatbox">
-                <div class="messages-wrapper">
-                    <div class="status">Searching for a partner...</div>
-                </div>
+    <div class="chat-container">
+        <div class="chatbox">
+            <div class="messages-wrapper">
+                <p class="status">Connecting...</p>
             </div>
             <div class="reply">
-                <div class="typing"></div>
-                <div class="wrapper">
-                    <input class="usermsg" type="text" placeholder="Say hello!" disabled/><button class="send">Send</button>
-                </div>
+                <input class="usermsg" type="text" placeholder="Type your message..." disabled>
+                <button class="send">Send</button>
+                <p class="typing"></p>
             </div>
         </div>
     </div>
 
-    <!-- Link to external JS file -->
     <script src="script.js"></script>
-
 </body>
 </html>
+
 
